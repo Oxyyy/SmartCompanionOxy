@@ -1,0 +1,2 @@
+# SmartCompanionOxy
+AndroidStudio scares me
