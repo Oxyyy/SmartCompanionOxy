@@ -50,10 +50,8 @@ class MainActivity : ComponentActivity() {
             val eventsTab = TabBarItem(title = getString(R.string.bottom_navbar_events), selectedIcon = Icons.Filled.Notifications, unselectedIcon = Icons.Outlined.Notifications)
             val historyTab = TabBarItem(title = getString(R.string.bottom_navbar_history), selectedIcon = Icons.Filled.List, unselectedIcon = Icons.Outlined.List)
 
-            // creating a list of all the tabs
             val tabBarItems = listOf(homeTab, eventsTab, historyTab)
 
-            // creating our navController
             val navController = rememberNavController()
 
             ISENSmartCompanionTheme {
@@ -93,7 +91,7 @@ class MainActivity : ComponentActivity() {
                 }
             }
 
-            override fun onFailure(p0: Call<List<EventModel>>, p1: Throwable) {
+            override fun onFailure(p0: Call<List<EventModel>>, p1: Throwable) { // a voir
                 Log.e("request", p1.message ?: "request failed")
             }
         })

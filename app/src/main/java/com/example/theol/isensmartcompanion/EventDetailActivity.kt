@@ -67,12 +67,7 @@ class EventDetailActivity : ComponentActivity() {
 @Composable
 fun EventDetail(event: EventModel, innerPaddingValues: PaddingValues) {
     Column(Modifier.padding(innerPaddingValues)) {
-//        val id: String,
-//        val title: String,
-//        val description: String,
-//        val date: String,
-//        val location: String,
-//        val category: String): Serializable
+
         Text(event.title)
         Text(event.date)
         Text(event.category)
