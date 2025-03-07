@@ -1,2 +1,2 @@
 # SmartCompanionOxy
-AndroidStudio scares me
+CHECK THE MASTER BRANCH !!
